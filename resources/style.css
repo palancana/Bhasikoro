@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-3 menu"] {
+    float: left;
+    padding: 15px;
+    height: 100%;
+
+}
+
+[class*="col-"] {
+    float:left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header, .categoryHeader {
+    background-color: #ffffff;
+    padding: 15px;
+    color: #383838;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.header a {
+    color: #383838;
+    text-decoration: none;
+}
+
+#headerTitle {
+    display:inline-block;
+    width: 80%;
+}
+
+/*#cartIcon {
+    position: absolute;
+    float:right; 
+    width: 5%;
+    height: 5%;
+    
+}*/
+
+/*  */
+/* Style of the entire menu list. */
+.menu ul {
+    /* Take out list bullets */
+    list-style-type: none;
+    /* No space generated around content */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style of every single list entry */
+.menu li {
+    /* Space generated around the entry 
+    ATTENTION: Match wiht a margin of same px for correct display.
+    */
+    padding: 10px;
+    /* Margin between list entries */
+    margin-bottom: 7px;
+    /* Default background color */
+    background-color: #cc1616;
+    /* Shadow for every entry box 
+    1st param: vertical shadow
+    2nd param: horizontal shadow
+    3rd param: blur distance
+    4th param: color of the shadow
+    Then it is repeated for adding double shadow
+    */
+    /* OFF
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    */
+}
+
+.creators img {
+    border-radius: 50%;
+    filter: grayscale();
+    width: 35%;
+    height: 35%;
+
+
+}
+
+/* Style for links in every list entry, dropdown button, and dropdown menu links */
+li a, .dropbtn, .dropdown-content a {
+    /* Displays it like a block (similiar to a paragraph <p>) */
+    display: block;
+    /* Text link color */
+    color: #ffffff;
+    /* Text aligned inside the box */
+    text-align: center;
+    /* Vertical and horizontal padding */
+    padding: 8px 0;
+    /* Remove link default format (underlined) */
+    text-decoration: none;
+}
+
+/* All entries and dropdown reaction to hover the mouse */
+.menu li:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+    /* Changes box background color */
+    background-color: #8c0c0c;
+}
+
+.myAccountSubmenu{
+    display: none;
+}
+
+/* Dropdown content style */
+.dropdown-content {
+    /* Hides the dropdown content from being always visible */
+    display: none;
+    /* The element is positioned relative to its first positioned (not static) ancestor element 
+    Change it for having a wider or more consistend dropdown content box.
+    */
+    
+    /* Default background color */
+    background-color: #8c0c0c;
+    /* Minimum width for the dropdown menu */
+    min-width: 123px;
+    /* Shadow for every entry box 
+    1st param: vertical shadow
+    2nd param: horizontal shadow
+    3rd param: blur distance
+    4th param: color of the shadow
+    */
+    /* OFF
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    */
+}
+
+/* Only if you hover over the dropdown menu, it appears with this style */
+.dropdown:hover .dropdown-content {
+    margin: 10px;
+    display: block;
+}
+
+.dropdown a:hover {
+    color: #000000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aside {
+    background-color: #cc1616;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Style for all the input forms */
+input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    /* Match border with the focus border */
+    border: 4px solid #777777;
+    transition: 0.5s;
+    outline: none;
+}
+
+/* Style for all the input forms when on focus */
+input:focus {
+    border: 4px solid #383838;
+}
+
+/* Style for the text inside an input box */
+input[type="text"] {
+    font-size: 12px;
+}
+
+/* Style for buttons */
+
+.hideField {
+    display: none;
+}
+
+.searchBoxAppend {
+    width: 130px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.searchBoxAppend:focus {
+    width: 100%;
+}
+
+
+.button {
+  display: block;
+  background-color: #777777;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 20px;
+  width:inherit;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+
+
+.productSingle {
+    margin: 3px;
+    padding: 3px;
+    border: 3px solid #cc1616;
+}
+
+.productSingleCart {
+    margin: 3px;
+    padding: 3px;
+    border: 3px solid #cc1616;
+    display: inline-flex;
+    
+}
+
+.productSingleCart img {
+    height: 15%;
+    width: 15%;
+}
+
+
+
+.cartImage {
+    position: relative;
+    
+}
+
+.cartNumber {
+    
+/*var version 
+    position: absolute;
+
+    height: auto;
+    top: -67px;
+    right: 37px;
+    
+    font-size: 3.2vw;
+  */
+    
+    /*Circle*/
+    background: #cc1616;
+    border: 0px;
+    border-radius: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    
+    
+    /*fix version*/
+    
+    position: absolute;
+
+    height: auto;
+    top: -62px;
+    right: 32px;
+    
+    font-size: 30px;
+
+}
+
+#cartIcon {
+
+/*var version
+    max-height: 125px;
+    max-width: 125px;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    height: auto;
+    top: -80px;
+    right: 16px;
+    */
+    
+    /*fix version*/
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    height: auto;
+    top: -80px;
+    right: 16px;
+    
+}
+
+
+#checkOut {
+    margin: 3px;
+    padding: 3px;
+}
+
+#checkOutButton {
+    float: left;
+}
+
+#checkOutPrice {
+    float: right;
+}
+
+#purchaseMessage {
+    text-align: center;
+}
+
+
+
+.ProductTable {
+
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .cartNumber a, a:link, a:visited {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+.cartNumber {
+    
+    /*position: absolute;
+        width: 7%;
+    height: 7%;
+    height: auto;
+    top: -60px;
+    right: 42px;
+    font-size: 20%;
+    */
+    /*min-height: 70px;
+    min-width: 70px;
+    */
+    
+
+    
+    position: absolute;
+    
+    /*Circle*/
+    background: #cc1616;
+    border: 0px;
+    border-radius: 50%;
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    
+    
+    height: auto;
+    top: -68px;
+    right: 28px;
+    font-size: 25px;
+
+}
+    
+
+
+#cartIcon {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    height: auto;
+    top: -80px;
+    right: 16px;
+
+}
+    
+}
