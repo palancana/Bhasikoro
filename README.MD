@@ -4,13 +4,13 @@ Online shop built from zero, made without the use of any template or plugin.
 
 ## Purpose
 
-We developed this webpage for the Internet and Web Development Technologies subject for the Autonomous University of Barcelona (UAB) with the intention to learn the technologies and lenguages used.
+We developed this webpage for the Internet and Web Development Technologies subject for the Autonomous University of Barcelona (UAB) with the intention to learn the technologies and languages used.
 
 ## Features
 
 ### Front-end
 
-The user can access the webpage without logging in and can navigate through the different products. There is three differents types of products (bikes, wheels and accessories). The user can view the price and click on it to add it to the shopping cart. A small number with the quantity of products appears and updates in the shopping cart icon as soon as the user adds one to it. In order to validate the shopping cart, the user needs to register or log in. After that, the products in the shopping cart dissapear. The user can also perform a search within all the products.
+The user can access the webpage without logging in and can navigate through the different products. There is three different types of products (bikes, wheels and accessories). The user can view the price and click on it to add it to the shopping cart. A small number with the quantity of products appears and updates in the shopping cart icon as soon as the user adds one to it. In order to validate the shopping cart, the user needs to register or log in. After that, the products in the shopping cart disappear. The user can also perform a search within all the products.
 
 ### Back-end
 
@@ -41,7 +41,7 @@ Sensitive information (like passwords) that is contained in the database is also
 
 * **[Rafael Díaz](https://github.com/palancana)**
 
-  * Author and mantainer
+  * Author and maintainer
 
 * **[Mario Arias](https://github.com/Shooter9)**
 
